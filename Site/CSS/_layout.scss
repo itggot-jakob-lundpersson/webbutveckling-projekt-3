@@ -1,6 +1,6 @@
 .wrapper{
     display: grid;
-    grid-template-rows: 100vh 15vh 95vh 10vh; 
+    grid-template-rows: 100vh 15vh 75vh 10vh; 
     grid-template-columns: 100%;
 }
 
@@ -17,8 +17,8 @@ body{
         position: absolute;
         top: 80%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5rem;
+        transform: translate(-50%, -60%);
+        font-size: 3rem;
         color: aliceblue;
     }
 }
