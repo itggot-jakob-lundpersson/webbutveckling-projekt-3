@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-rows: 100vh 15vh 95vh 10vh;
+  grid-template-rows: 100vh 15vh 75vh 10vh;
   grid-template-columns: 100%; }
 
 body {
@@ -14,8 +14,8 @@ body {
     position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
+    transform: translate(-50%, -60%);
+    font-size: 3rem;
     color: aliceblue; }
 
 header {
@@ -37,8 +37,44 @@ header {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: 35%;
+    margin-right: auto;
     color: white; }
+
+.secondary {
+  top: 0;
+  height: 15%; }
+
+menu {
+  position: fixed;
+  left: -100vw;
+  transition: 1s;
+  background-color: rgba(39, 35, 35, 0.95);
+  height: 100vh;
+  width: 60vw;
+  z-index: 9999999999999999999999999;
+  top: 0;
+  margin: 0;
+  padding: 20px; }
+  menu .link a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 10px; }
+  menu .link h3 {
+    color: white;
+    font-size: 2rem; }
+
+nav {
+  position: fixed;
+  left: -20vw;
+  top: 5vh;
+  transition: all 1.5s ease; }
+
+.activate_cross {
+  left: 80vw; }
+
+.activate_menu {
+  left: 0; }
 
 main {
   border-style: solid;
@@ -47,10 +83,22 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  main .picbox {
-    width: 146px;
-    height: 146px;
-    padding: 5px; }
+  main h1 {
+    margin: 0;
+    margin-top: 5%; }
+  main h2 {
+    margin: -10% 7% -5% 7%;
+    font-size: 1rem; }
+  main .sitelinks {
+    display: grid;
+    grid-template-rows: 155px 155px;
+    grid-template-columns: 155px 155px; }
+    main .sitelinks .picbox {
+      width: 146px;
+      height: 146px;
+      padding: 0;
+      border-style: solid;
+      border-color: rgba(168, 168, 168, 0.8); }
 
 footer {
   border-style: solid;

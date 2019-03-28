@@ -24,6 +24,13 @@ header{
 
     }
 }
+
+.secondary{
+    top: 0;
+    height: 15%;
+    
+}
+
 menu {
     position: fixed;
     left: -100vw;
@@ -55,7 +62,7 @@ nav {
     position: fixed;
     left: -20vw;
     top: 5vh;
-    transition: all 1000ms cubic-bezier(0.565, 1.325, 0.645, 0.430);
+    transition: all 1.5s ease;
 }
 
 .activate_cross{
@@ -65,3 +72,4 @@ nav {
     left: 0;
 
 }
+

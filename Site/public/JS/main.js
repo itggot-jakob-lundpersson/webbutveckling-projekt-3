@@ -1,8 +1,11 @@
-function doStuff(event){
+function menuToggle(event){
     let menu = document.querySelector("menu")
-        menu.classList.toggle("activate")
-        hamborgare.classList.toggle("moveLeft")
-        shade.classList.toggle("activate")
+    let nav = document.querySelector("nav")
+    //let klass = document.getElementsByClassName("klass")
+    menu.classList.toggle("activate_menu")
+    nav.classList.toggle("activate_cross")
+    
+
     }
 
     
