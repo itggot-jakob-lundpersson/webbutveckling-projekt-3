@@ -3,4 +3,14 @@ footer{
     border-width: 1px;
     height: 100%;
     background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    
+    a{
+        margin: auto 10px auto 10px;
+        font-size: 1.2rem;
+        color: rgb(49, 121, 97);
+    }
+
+
 }

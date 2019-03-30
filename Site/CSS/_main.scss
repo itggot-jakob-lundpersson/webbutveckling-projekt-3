@@ -1,6 +1,4 @@
 main{
-    border-style: solid;
-    border-width: 1px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -22,9 +20,162 @@ main{
             height: 146px;
             padding: 0;
             border-style: solid;
-            border-color: rgba($color: #a8a8a8, $alpha: 0.8)
+            border-color: rgba($color: #a8a8a8, $alpha: 0.8);
+            position: relative;
+            top: 0;
+            z-index: 99;
         }
+    }
+    .cluster{
+        height: 146px;
+        width: 300px;
+        margin: 15px auto 15px auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        
+        .picbox{
+            width: 146px; 
+            height: 146px;
+            padding: 0;
+            border-style: solid;
+            border-color: rgba($color: #a8a8a8, $alpha: 0.8);
+            
+            
+        }
+        .buttons{
+            display: grid;
+            margin-left: 4px;
+            grid-template-rows: 99% 99%;
+            grid-row-gap: 4px;
+            border-style: none;
+            border-width: 0;
+        }
+        button{
+            height: 100%;
+            width: 146px;
+            border-style: none;
+            
+            
+        }
+        
+        
+        
+        .köp{
+            background-color: rgb(12, 209, 12);
+        }
+        .info{
+            background-color: rgba(190, 177, 177, 0.685);
+        }
+        
+        
+        
+    }
+    
+    .bigcluster{
+        height: 250px;
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+        
+        .banner {
+            height: 60px;
+            width: 101%;
+            
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            position: absolute;
+            border: 0;
+            bottom: 0;
+            left: 0;
+
+            button {
+                border: none;
+                margin: 0;
+                
+                
+            }
+            .köp{
+                background-color: rgba($color: #1fb645ad, $alpha: 0.5)
+                
+            }
+            .info{
+                background-color: rgba($color: #8a7f7f, $alpha: 0.5)
+            }
+        }
+        
+        .bigpicbox{
+            display: inline-block;
+            border-style: solid;
+            height: 100%;
+            width: 100%;
+        }
+        
     }
     
 }
 
+.shoppinglist{
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 auto 0 auto;
+    column-span: all;
+    article{
+        display: grid;
+        grid-template-columns: 90% 10%;
+        font-size: 1.2rem;
+        margin: 5px 0 5px 0;
+        .material-icons{
+            font-size: 20px;
+        }
+    }
+}
+
+.buylist{
+    height: 60vh;
+    button{
+        width: 150px; 
+        height: 50px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        background-color: rgba($color: #3dd118, $alpha: 1.0);
+        margin: 5px auto 0 auto;
+    }
+    .clear{
+        width: 100%;
+        background-color: rgba($color: #ec1212, $alpha: 1.0);
+    }
+    .buttons{
+        height: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70% 25%;
+        grid-column-gap: 5%;
+    }
+}
+
+.picbanner{
+    width: 100%;
+    height: 20%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    a{
+        color: rgb(1, 172, 72);
+    }
+    
+}
+
+img{
+    z-index: 999;
+}

@@ -1,12 +1,13 @@
 header{
     border-style: solid;
-    border-width: 1px;
+    border-width: 0 0 1px 0;
     height: 100%;
     background-color: yellowgreen;
     display: flex;
     position: sticky;
     top: 0px;
     justify-items: center;
+    z-index: 999999999;
     .material-icons{
         font-size: 55px;
         margin-top: auto;
@@ -23,11 +24,19 @@ header{
         color: white;
 
     }
+    a{
+        display: flex;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+    }
 }
 
 .secondary{
     top: 0;
-    height: 15%;
+    display: grid;
+    grid-template-rows: 15vh 10vh;
+    grid-template-columns: 100%;
     
 }
 
@@ -38,7 +47,7 @@ menu {
     background-color: rgba($color: #272323, $alpha: 0.95);
     height: 100vh;
     width: 60vw;
-    z-index: 9999999999999999999999999;
+    z-index: 9999999999999999999;
     top: 0;
     margin: 0;
     padding: 20px;
@@ -72,4 +81,61 @@ nav {
     left: 0;
 
 }
+.options{
+    height: 10vh;
+    width: 100%;
+    border-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    background-color: white;
+    .material-icons{
+        font-size: 30px;
+    }
+}
+.navigative{
+    height: 15vh;
+    width: 100%;
+    display: flex;
 
+}
+
+.dropdown{
+    border-style: solid;
+    border-width: 0.5px;
+    display: flex;
+    height: 35px;
+    width: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    h3{
+        font-size: 0.8rem;
+        margin: auto 0 auto 5px;
+    }
+    details{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        
+    }
+    
+}
+
+input{
+    color: black;
+    height: 20px;
+    width: 120px;
+    margin: auto 0 auto 20px;
+}
+
+details[open]{
+    background-color: white;
+    margin: auto 0 auto 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.third{
+    height: 60%;
+}
